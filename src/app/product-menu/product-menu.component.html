@@ -1,0 +1,10 @@
+<div *ngFor="let p of allProducts">
+    <h2>{{p.name}}</h2>
+    <p>{{p.price}}</p>
+    <p>{{p.productId}}</p>
+</div>
+
+<p>Number of Products: {{allProducts.length}}</p>
+
+
+<button (click)="this.productService.getAllProducts()">Test Our Service</button>
